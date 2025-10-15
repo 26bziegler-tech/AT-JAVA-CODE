@@ -1,0 +1,7 @@
+1. Is an instance method because it is called on the String object name.
+
+2. Is a static method because it is called on the String class.
+
+3. Is a static method because it is called on the String class.
+
+4. Is an instance method because it is called on the String object phrase.
