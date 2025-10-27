@@ -1,0 +1,45 @@
+Brennan Ziegler
+AT Software Design with Java
+
+PartA Program Flowchart
+-----------------------------
+
+Start
+ |
+ v
+Ask: Is it Monday? (y/n)
+ |
+ v
+Ask: Enter customer's age
+ |
+ v
+Ask: Enter cost of meal ($)
+ |
+ v
+Set discount = 0.0
+ |
+ v
+Is it Monday?
+ | 
+  yes -> Is age < 13?
+ |              |yes -> discount = 7.5%
+ |              |no -> Is age >= 50?
+ |                           |yes -> discount = 15%
+ |                           |no -> discount = 5%
+ |
+  no -> Is age < 13?
+                |yes -> discount = 5%
+                |no -> Is age >= 50?
+                             |yes -> discount = 7.5%
+                             |no -> discount = 0%
+
+ |
+ v
+Calculate discount amount = cost * discount
+Calculate final cost = cost - discount amount
+ |
+ v
+Show discount %, discount amount, and total cost
+ |
+ v
+End
