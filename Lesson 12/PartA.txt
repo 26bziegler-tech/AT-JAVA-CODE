@@ -1,0 +1,6 @@
+The error is that the variable name input is used twice for two different types. First it is a String, then it is an int. 
+
+How to fix: Use different variable names. Keep the name as a String and use another name for the age.
+
+String name = in.next();
+int age = in.nextInt();
