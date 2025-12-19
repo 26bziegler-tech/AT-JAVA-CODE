@@ -6,7 +6,7 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JComponent;
 
-public class Lesson13PartB {
+public class PartB {
 
     public static void draw(Graphics g) {
 

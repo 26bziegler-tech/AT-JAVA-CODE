@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JComponent;
 
-public class Lessons13PartC {
+public class PartC {
 
     public static void draw(Graphics g) {
 
