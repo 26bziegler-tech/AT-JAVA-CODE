@@ -9,10 +9,10 @@ public class PartB {
     public static void main(String[] args) {
         try {
             File InputFile = new File("sales_by_cat.txt");
-            Scanner Reader = new Scanner(InputFile);
+            Scanner in = new Scanner(InputFile);
 
-            while (Reader.hasNextLine()) {
-                String Line = Reader.nextLine();
+            while (in.hasNextLine()) {
+                String Line = in.nextLine();
                 
                 String[] Parts = Line.split(", ");
 
@@ -40,7 +40,7 @@ public class PartB {
                                       Dept, Manager, Revenue);
                 }
             }
-            Reader.close();
+            in.close();
 
         } catch (FileNotFoundException e) {
             System.out.println("Error: The file 'sales_by_cat.txt' was not found.");

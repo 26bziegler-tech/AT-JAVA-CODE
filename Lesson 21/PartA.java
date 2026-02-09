@@ -9,14 +9,14 @@ public class PartA {
     public static void main(String[] args) {
         try {
             File InputFile = new File("Top5Unemployment.txt");
-            Scanner Reader = new Scanner(InputFile);
+            Scanner in = new Scanner(InputFile);
 
             System.out.println("----------------------------------------------------------------------");
             System.out.println("                    Top 5 Unemployment Rates                          ");
             System.out.println("----------------------------------------------------------------------");
 
-            while (Reader.hasNextLine()) {
-                String Line = Reader.nextLine();
+            while (in.hasNextLine()) {
+                String Line = in.nextLine();
                 
                 String[] Parts = Line.split(", ");
 
@@ -37,7 +37,7 @@ public class PartA {
             }
 
             System.out.println("----------------------------------------------------------------------");
-            Reader.close();
+            in.close();
 
         } catch (FileNotFoundException e) {
             System.out.println("Error: The file 'Top5Unemployment.txt' was not found.");
