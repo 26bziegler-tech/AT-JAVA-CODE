@@ -1,0 +1,10 @@
+Brennan Ziegler
+AT Software Design with Java
+
+The result of the code will be 3, this is due to the way Java treats the finally block 
+and the return statements. If we call the getInt() method, the code within the try block 
+will be executed, and the return statement "return 1;" will be encountered, at which point 
+the JVM "buffers" the return of the value 1. The code within the finally block must be executed 
+before the method actually returns, and since a return statement is included within the finally 
+block, this statement "overrides" the previously "buffered" return statement. 
+In Java, a return statement or an exception in a finally block always has the "last word."
