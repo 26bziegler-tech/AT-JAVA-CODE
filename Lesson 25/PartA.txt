@@ -1,0 +1,13 @@
+Brennan Ziegler
+AT Software Design with Java
+
+The result of this code starts by computing the initial transactions before a reset. When the addItem method is 
+invoked with arguments of 3.00 and 1.50, the internal total of the CashRegister object is set to 4.50. The first 
+System.out.printf statement then prints Total = $4.50, with the formatting string used to display the double value 
+to two decimal places. Immediately after this, the clear() method is called, 
+which essentially resets the register's internal sum and item count to zero, erasing all the previous information.
+
+After the reset, the code adds two more items, this time with prices of 2.00 and 2.50. Since the previous information 
+has been erased, the new item count is set to 2 and the new total to 4.50. The program then prints You have 2 items. 
+followed by another formatted line, Total = $4.50. Although the final total is the same as the first one, it is actually 
+a brand new set of transactions, since the clear() method ensured that the information did not add up to a cumulative total of 9.00.
