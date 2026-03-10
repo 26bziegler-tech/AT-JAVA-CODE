@@ -1,3 +1,4 @@
+package MyStuff
 
 public class Random {
 
